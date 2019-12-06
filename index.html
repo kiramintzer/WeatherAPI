@@ -48,7 +48,7 @@
 			units = "metric"
         } 
     	
-		let query = "http://api.openweathermap.org/data/2.5/weather?q="+loc+"&units=" + units + "&APPID="+YourWeatherAppID;
+		let query = "https://api.openweathermap.org/data/2.5/weather?q="+loc+"&units=" + units + "&APPID="+YourWeatherAppID;
 
 		console.log("Query is :" + query)
 
@@ -73,7 +73,7 @@
 			$("#temp").html(current_temp);
 			$("#high").html(high_temp);
 			$("#low").html(low_temp);
-			$("#tempImg").attr("src","http://openweathermap.org/img/wn/"+ icon + ".png");	
+			$("#tempImg").attr("src","https://openweathermap.org/img/wn/"+ icon + ".png");	
 
 	}) 
 	}
